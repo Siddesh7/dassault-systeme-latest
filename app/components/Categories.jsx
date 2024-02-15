@@ -40,14 +40,14 @@ const Categories = () => {
               className="owl-carousel owl-theme skill-slider owl-loaded owl-drag px-[60px] md:px-[120px] z-[2]"
             >
               <Link
-                href="/category/mech"
+                href="/categories/mechanical"
                 className="w-[180px] h-[200px] flex flex-col justify-center items-center"
               >
                 <img src={"/mech-n.png"} alt="Image" className="w-[100%]" />
                 <h5>Mechanical</h5>
               </Link>
               <Link
-                href="/category/mech"
+                href="/categories/physics"
                 className="w-[180px] h-[200px] flex flex-col justify-center items-center"
               >
                 <img
@@ -58,7 +58,14 @@ const Categories = () => {
                 <h5>Physics</h5>
               </Link>
               <Link
-                href="/category/mech"
+                href="/categories/math"
+                className="w-[180px] h-[200px] flex flex-col justify-center items-center"
+              >
+                <img src={"/match.png"} alt="Image" className="w-[100%]" />
+                <h5>Maths</h5>
+              </Link>
+              <Link
+                href="/categories/ece"
                 className="w-[180px] h-[200px] flex flex-col justify-center items-center"
               >
                 <img src={"/match.png"} alt="Image" className="w-[100%]" />

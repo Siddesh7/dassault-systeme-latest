@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar";
 import Image from "next/image";
+import Link from "next/link";
 const Hero = () => {
   return (
     <div className="px-2 md:px-6 py-4 md:pt-6 min-h-screen bg-cover bg-[url('/banner-bg.png')]">
@@ -22,7 +23,9 @@ const Hero = () => {
             memorable.Providing simulations for hands-on learning in subjects
             such as science, technology, engineering, and mathematics (STEM).
           </p>
-          <button className="btn btn-primary w-[160px]">Get Started</button>
+          <Link href="/categories">
+            <button className="btn btn-primary w-[160px]">Get Started</button>
+          </Link>
         </div>
       </div>
     </div>

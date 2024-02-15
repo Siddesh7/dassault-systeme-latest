@@ -16,10 +16,7 @@ const page = () => {
             {" "}
             <div className="card w-[40%] bg-base-100 shadow-xl image-full">
               <figure>
-                <img
-                  src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                  alt="Shoes"
-                />
+                <img src="/mechanical/1.png" alt="Shoes" />
               </figure>
               <div className="card-body">
                 <h2 className="card-title text-4xl">Mechanical Videos</h2>
@@ -29,7 +26,7 @@ const page = () => {
                   paradigm
                 </p>
                 <div className="card-actions justify-end">
-                  <Link href={"/mechanical"}>
+                  <Link href={"/categories/mechanical"}>
                     <button className="btn btn-primary">Learn</button>
                   </Link>
                 </div>
@@ -37,18 +34,16 @@ const page = () => {
             </div>
             <div className="card w-[40%] bg-base-100 shadow-xl image-full">
               <figure>
-                <img
-                  src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                  alt="Shoes"
-                />
+                <img src="/physics/05.png" alt="Shoes" />
               </figure>
               <div className="card-body">
-                <h2 className="card-title text-4xl">Mathematics Videos</h2>
+                <h2 className="card-title text-4xl">Physics Videos</h2>
                 <p>
-                  Curated collection of interesting math topics just for you!
+                  Curated collection of interesting Physics topics just for you
+                  to learn in VR!
                 </p>
                 <div className="card-actions justify-end">
-                  <Link href={"/math"}>
+                  <Link href={"/categories/physics"}>
                     {" "}
                     <button className="btn btn-primary">Learn</button>
                   </Link>
@@ -60,10 +55,7 @@ const page = () => {
             {" "}
             <div className="card w-[40%] bg-base-100 shadow-xl image-full">
               <figure>
-                <img
-                  src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                  alt="Shoes"
-                />
+                <img src="/ece/44.png" alt="Shoes" />
               </figure>
               <div className="card-body">
                 <h2 className="card-title text-4xl">EEE Videos</h2>
@@ -71,7 +63,7 @@ const page = () => {
                   Curated collection of interesting EEE topics just for you!
                 </p>
                 <div className="card-actions justify-end">
-                  <Link href={"/math"}>
+                  <Link href={"/categories/ece"}>
                     {" "}
                     <button className="btn btn-primary">Learn</button>
                   </Link>
@@ -80,18 +72,15 @@ const page = () => {
             </div>
             <div className="card w-[40%] bg-base-100 shadow-xl image-full">
               <figure>
-                <img
-                  src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                  alt="Shoes"
-                />
+                <img src="/math/29.png" alt="Shoes" />
               </figure>
               <div className="card-body">
-                <h2 className="card-title text-4xl">Mathematics Videos</h2>
+                <h2 className="card-title text-4xl">Math Videos</h2>
                 <p>
                   Curated collection of interesting math topics just for you!
                 </p>
                 <div className="card-actions justify-end">
-                  <Link href={"/math"}>
+                  <Link href={"/categories/math"}>
                     {" "}
                     <button className="btn btn-primary">Learn</button>
                   </Link>

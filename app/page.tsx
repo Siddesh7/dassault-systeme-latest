@@ -12,7 +12,7 @@ export default function Home() {
         </h1>
         <iframe
           className=" w-[90vw] h-[40vh] md:w-[70vw] md:h-[70vh]"
-          src="https://www.youtube-nocookie.com/embed/lAxXWYAIt4k?si=J6o10G-GbkNQY0Gi"
+          src="https://www.youtube-nocookie.com/embed/r3t3KtuWQNA"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         ></iframe>
