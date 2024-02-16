@@ -3,12 +3,12 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <footer className="footer footer-center p-1 text-base-content rounded bg-[url('/footer-bg.png')] pt-[150px] pb-[50px] bg-center bg-cover">
-      <nav className="grid grid-flow-col gap-4">
+      {/* <nav className="grid grid-flow-col gap-4">
         <a className="link link-hover">About us</a>
         <a className="link link-hover">Contact</a>
         <a className="link link-hover">Jobs</a>
         <a className="link link-hover">Press kit</a>
-      </nav>
+      </nav> */}
       <div className="flex flex-col md:flex-row-reverse w-[90%] m-auto justify-between">
         {" "}
         <nav>
