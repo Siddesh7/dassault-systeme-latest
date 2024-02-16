@@ -3,7 +3,8 @@ import {getExp} from "@/app/lib/Exp";
 import Link from "next/link";
 
 const VideosPage = ({params}: {params: {id: string}}) => {
-  const experiments = getExp(params.id);
+  const experiments: any[] = getExp(params.id);
+
   return (
     <main className="bg-[#151515]">
       <div className="px-2 md:px-6 py-2 md:py-6 min-h-screen bg-cover bg-[url('/color-sharp.png')] bg-right-bottom">
@@ -19,7 +20,9 @@ const VideosPage = ({params}: {params: {id: string}}) => {
                   <div className="card bg-base-100 shadow-xl image-full max-h-80">
                     <figure className="w-full overflow-hidden">
                       <img
-                        src={`/mechanical/${index + 1}.png`}
+                        src={`/${params.id}/${
+                          params.id !== "mechanical" ? exp.EXP_NO : index + 1
+                        }.png`}
                         alt="Mechanical Engineering Concept"
                         className="w-full min-h-80 max-h-80 overflow-hidden object-cover"
                       />
@@ -30,7 +33,11 @@ const VideosPage = ({params}: {params: {id: string}}) => {
                       </h2>
                       <p className="sm:text-sm md:text-md">{exp.DESCRIPTION}</p>
                       <div className="card-actions justify-end">
-                        <Link href={`/categories/mechanical/${index + 1}`}>
+                        <Link
+                          href={`/categories/${params.id}/${
+                            params.id !== "mechanical" ? exp.EXP_NO : index + 1
+                          }`}
+                        >
                           <button className="btn btn-primary">Learn</button>
                         </Link>
                       </div>

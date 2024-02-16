@@ -273,9 +273,670 @@ const data = {
         "A universal tapping machine is a machine tool that is used to create threads on the internal or external surfaces of a workpiece",
     },
   ],
-  physics: [],
-  math: [],
-  ece: [],
+  physics: [
+    {
+      EXP_NO: 1,
+      EXP: "Acceleration and distance",
+      YOUTUBE: "https://youtu.be/aXVw1Tgbenw",
+      DESCRIPTION:
+        "Acceleration is a measure of how quickly an object's velocity changes",
+    },
+    {
+      EXP_NO: 2,
+      EXP: "Moment of inertia",
+      YOUTUBE: "https://youtu.be/Yp4Fr0A3RSE",
+      DESCRIPTION:
+        "Moment of inertia is a measure of an object's resistance to change in its rotational motion",
+    },
+    {
+      EXP_NO: 3,
+      EXP: "Motor",
+      YOUTUBE: "https://youtu.be/rUoXe2OX8Rg",
+      DESCRIPTION:
+        "A motor is an electrical machine that converts electrical energy into mechanical energy.",
+    },
+    {
+      EXP_NO: 4,
+      EXP: "Eddy Current",
+      YOUTUBE: "https://youtu.be/w5S4c2POR6k",
+      DESCRIPTION:
+        "Eddy currents are loops of electrical current induced within conductors by a changing magnetic field in the conductor",
+    },
+    {
+      EXP_NO: 5,
+      EXP: "Atmospheric pressure demonstration using floating balls experiment",
+      YOUTUBE: "https://youtu.be/xH63Abesgnw",
+      DESCRIPTION:
+        "Atmospheric pressure demonstration using floating balls experiment",
+    },
+    {
+      EXP_NO: 6,
+      EXP: "Metal fatigue",
+      YOUTUBE: "https://youtu.be/GUHsHObQeSQ",
+      DESCRIPTION:
+        "Metal fatigue is when a metal becomes damaged or fails due to the repetition of applied loads or stresses below the metal's yield strength",
+    },
+    {
+      EXP_NO: 7,
+      EXP: "Wonder of Light absorption",
+      YOUTUBE: "",
+      DESCRIPTION: "",
+    },
+    {
+      EXP_NO: 8,
+      EXP: "Belt Pulley",
+      YOUTUBE: "https://youtu.be/Q3lcIlWtT_U",
+      DESCRIPTION: "A belt connects a variable speed pulley to a driven sheave",
+    },
+    {
+      EXP_NO: 9,
+      EXP: "Mechanism",
+      YOUTUBE: "https://youtu.be/nsdunRBjekE",
+      DESCRIPTION:
+        "Mechanisms are systems or devices that are designed to perform specific tasks or functions",
+    },
+    {
+      EXP_NO: 10,
+      EXP: "Gyroscpic Effect",
+      YOUTUBE: "https://youtu.be/LYiVTW4TRCQ",
+      DESCRIPTION:
+        "The gyroscopic effect refers to the phenomenon where a rotating object exhibits stability and resistance to changes in its orientation.",
+    },
+    {
+      EXP_NO: 11,
+      EXP: "Mixing Two Temperatures",
+      YOUTUBE: "https://youtu.be/Zv8sOVAyck4",
+      DESCRIPTION:
+        "The mixing of two liquids with different temperatures is the transfer of heat from one liquid to the other",
+    },
+    {
+      EXP_NO: 12,
+      EXP: "Water pressure increases with depth",
+      YOUTUBE: "https://youtu.be/8CmlS7dBAVU",
+      DESCRIPTION:
+        "In a fluid column, as the depth increases, the pressure increases as well",
+    },
+    {
+      EXP_NO: 13,
+      EXP: "Screw pump",
+      YOUTUBE: "https://youtu.be/xQ4HNBSPjdU",
+      DESCRIPTION:
+        "A screw pump is a positive displacement pump that use one or several screws to move fluid solids or liquids along the screw axis.",
+    },
+    {
+      EXP_NO: 14,
+      EXP: "Vacuum cleaner",
+      YOUTUBE: "https://youtu.be/qczL28ER6CE",
+      DESCRIPTION:
+        "A vacuum cleaner is a device that uses an electric motor to create suction for removing dirt and debris from surfaces such as carpets, upholstery, and hard floors.",
+    },
+    {
+      EXP_NO: 15,
+      EXP: "Sound of current experiment",
+      YOUTUBE: "https://youtu.be/8GqyJxlMxNk",
+      DESCRIPTION:
+        "There are electrical waves present in the lines of connections between the amplifier and the speaker",
+    },
+    {
+      EXP_NO: 16,
+      EXP: "Liquid crystal polarizer",
+      YOUTUBE: "https://youtu.be/V3llNEKYXH0",
+      DESCRIPTION:
+        "A liquid crystal polarizer is a device that uses liquid crystals to control the polarization of light",
+    },
+    {
+      EXP_NO: 17,
+      EXP: "Dancing sandy pattern",
+      YOUTUBE: "https://youtu.be/p8K1c45SC4U",
+      DESCRIPTION:
+        "This experiment is Chladni's best-known achievements was inventing a technique to show the various modes of vibration on a rigid surface",
+    },
+    {
+      EXP_NO: 18,
+      EXP: "Electromagnet Experiment",
+      YOUTUBE: "https://youtu.be/mNk8V-Ht18U",
+      DESCRIPTION:
+        "An electromagnet is a type of magnet in which the magnetic field is produced by an electric current.",
+    },
+    {
+      EXP_NO: 19,
+      EXP: "Thompson Experiment",
+      YOUTUBE: "https://youtu.be/jTGYL8ojp4U",
+      DESCRIPTION:
+        "The jumping ring experiment is an educational and fascinating demonstration in physics classrooms to illustrate the Faraday's laws of electromagnetic induction and Lenz's law as well.",
+    },
+    {
+      EXP_NO: 20,
+      EXP: "Electrical conduction",
+      YOUTUBE: "https://youtu.be/hb0T0qILAOk",
+      DESCRIPTION:
+        "Electrical conduction is the movement of electrically charged particles through a conductor",
+    },
+    {
+      EXP_NO: 20,
+      EXP: "Thermal conduction",
+      YOUTUBE: "https://youtu.be/bOs7DcScwpA",
+      DESCRIPTION:
+        "Thermal conduction is the transfer of heat from one body to another through direct contact",
+    },
+    {
+      EXP_NO: 21,
+      EXP: "Semiconductors",
+      YOUTUBE: "https://youtu.be/7rACd65bsVI",
+      DESCRIPTION:
+        "Semiconductors are materials which have a conductivity between conductors",
+    },
+    {
+      EXP_NO: 22,
+      EXP: "Fresnel lens",
+      YOUTUBE: "https://youtu.be/wkX84se4pQE",
+      DESCRIPTION:
+        "A Fresnel lens replaces the curved surface of conventional optical lenses with a series of concentric grooves",
+    },
+    {
+      EXP_NO: 23,
+      EXP: "Observation of wave principle",
+      YOUTUBE: "https://youtu.be/_gV8zp5HUIo",
+      DESCRIPTION:
+        "The double-slit experiment is a classic example of how the wave nature of particles can be demonstrated.",
+    },
+    {
+      EXP_NO: 24,
+      EXP: "Moment",
+      YOUTUBE: "https://youtu.be/iuijzR2zBfE",
+      DESCRIPTION:
+        "A moment is a measure of the rotational force applied to an object around a specific point or axis",
+    },
+    {
+      EXP_NO: 25,
+      EXP: "Pulley",
+      YOUTUBE: "",
+      DESCRIPTION:
+        "A pulley is a simple machine that consists of a wheel with a groove around the edge, and a rope or cable that runs through the groove",
+    },
+    {
+      EXP_NO: 26,
+      EXP: "Elasticity",
+      YOUTUBE: "",
+      DESCRIPTION:
+        "Elasticity is the ability of a material to return to its original shape after being deformed by an applied force",
+    },
+    {
+      EXP_NO: 27,
+      EXP: "Wind turbine",
+      YOUTUBE: "https://youtu.be/Jn6wo_bl4yM",
+      DESCRIPTION:
+        "Windmill is a structure that converts wind power into rotational energy by means of vanes called sails or blades",
+    },
+    {
+      EXP_NO: 28,
+      EXP: "Sound amplification",
+      YOUTUBE: "https://youtu.be/k4USLq3f2R4",
+      DESCRIPTION:
+        "Sound amplification makes sounds louder and more intelligible",
+    },
+    {
+      EXP_NO: 29,
+      EXP: "Stationary waves",
+      YOUTUBE: "https://youtu.be/5_DumoDusU0",
+      DESCRIPTION:
+        "Stationary Waves are the combination of two Waves which move in opposite directions having the same amplitude as well as frequency.",
+    },
+    {
+      EXP_NO: 30,
+      EXP: "Patterns of pendulum movement",
+      YOUTUBE: "",
+      DESCRIPTION:
+        "A pendulum is an object suspended from a pivot point, moving back and forth in a regular, repeating pattern",
+    },
+    {
+      EXP_NO: 31,
+      EXP: "Semismograph",
+      YOUTUBE: "https://youtu.be/9Ual43VOGpc",
+      DESCRIPTION:
+        "A seismograph is a device that measures and records earthquakes and other seismic activity.",
+    },
+    {
+      EXP_NO: 32,
+      EXP: "Inertia suddenly doesn't work",
+      YOUTUBE: "https://youtu.be/IxL5Mo04J5c",
+      DESCRIPTION:
+        "Inertia is the tendency of an object to stay at rest or to continue moving at a constant speed in a straight line, unless acted upon by an external force.\n",
+    },
+    {
+      EXP_NO: 33,
+      EXP: "Lever",
+      YOUTUBE: "https://youtu.be/UJ5DUuHtZ60",
+      DESCRIPTION:
+        "A lever is a straightforward machine consisting of a beam or rigid rod pivoted at a fixed hinge, or fulcrum",
+    },
+    {
+      EXP_NO: 34,
+      EXP: "Couple",
+      YOUTUBE: "https://youtu.be/nvnl7JuRrR8",
+      DESCRIPTION:
+        "A couple refers to a pair of forces that are equal in magnitude, opposite in direction, and do not share a line of action",
+    },
+    {
+      EXP_NO: 35,
+      EXP: "Axis of rotation",
+      YOUTUBE: "https://youtu.be/1-hIFXBwk1w",
+      DESCRIPTION:
+        "The axis of rotation is an imaginary line around which an object rotates",
+    },
+    {
+      EXP_NO: 35,
+      EXP: "Momentum",
+      YOUTUBE: "https://youtu.be/BH2Vuf9ezxg",
+      DESCRIPTION: "Momentum is a measure of an object's motion",
+    },
+    {
+      EXP_NO: 36,
+      EXP: "Conservation of linear momentum",
+      YOUTUBE: "https://youtu.be/-xHaKs4uotA",
+      DESCRIPTION:
+        "The total momentum of a system remains constant unless there is an external force acting on the system",
+    },
+    {
+      EXP_NO: 37,
+      EXP: "Properties of impulsive force",
+      YOUTUBE: "https://youtu.be/Ibs2P4pKJGA",
+      DESCRIPTION:
+        "An impulse is defined as the change in momentum of an object over a certain period",
+    },
+    {
+      EXP_NO: 38,
+      EXP: "Acceleration due to gravity",
+      YOUTUBE: "https://youtu.be/p5g3ZWq2bKg",
+      DESCRIPTION:
+        "Acceleration due to gravity is the acceleration that is experienced by an object as it falls towards the surface of a planet ",
+    },
+    {
+      EXP_NO: 39,
+      EXP: "Moving lift to explain different 'g' forces",
+      YOUTUBE: "https://youtu.be/IBAkGtqgLQo",
+      DESCRIPTION:
+        "The gravitational force acting on a lift is the force exerted on the lift by the Earth's gravity",
+    },
+    {
+      EXP_NO: 40,
+      EXP: "Reflection and refraction",
+      YOUTUBE: "https://youtu.be/CqEbAo_4Bv8",
+      DESCRIPTION:
+        "Describe the behavior of light when it reflects or refracts off a surface",
+    },
+    {
+      EXP_NO: 41,
+      EXP: "Composite light",
+      YOUTUBE: "https://youtu.be/7MQLyd9UuO4",
+      DESCRIPTION:
+        "When a light ray is incident on the surface separating two media, the direction of the ray changes",
+    },
+    {
+      EXP_NO: 42,
+      EXP: "Scattering of light",
+      YOUTUBE: "https://youtu.be/jifmBQXe3Vs",
+      DESCRIPTION:
+        "Scattering happens when light moves from one medium to another, such as air or a glass of water",
+    },
+    {
+      EXP_NO: 43,
+      EXP: "Types of lenses",
+      YOUTUBE: "https://youtu.be/iJAt6X3VXEo",
+      DESCRIPTION: "Lenses are magnifying glasses with curved sides",
+    },
+    {
+      EXP_NO: 44,
+      EXP: "Telescope",
+      YOUTUBE: "https://youtu.be/FgrMxuX2FNA",
+      DESCRIPTION:
+        "A telescope is a device used to form magnified images of distant objects",
+    },
+  ],
+  math: [
+    {
+      EXP_NO: 1,
+      EXP: "Parabola",
+      YOUTUBE: "https://youtu.be/C6lm3C6gpLc",
+      DESCRIPTION:
+        "A parabola is a U-shaped plane curve which is mirror-symmetrical",
+    },
+    {
+      EXP_NO: 2,
+      EXP: "Patterns of pendulum movement",
+      YOUTUBE: "",
+      DESCRIPTION:
+        "A pendulum is an object suspended from a pivot point, moving back and forth in a regular, repeating pattern",
+    },
+    {
+      EXP_NO: 3,
+      EXP: "Curved line",
+      YOUTUBE: "https://youtu.be/eWypDW8wciY",
+      DESCRIPTION:
+        "A curved line is a line that is not straight but rather follows a curved path",
+    },
+    {
+      EXP_NO: 4,
+      EXP: "The family of conic sections",
+      YOUTUBE: "https://youtu.be/vzLex5anET0",
+      DESCRIPTION:
+        "The family of conic sections consists of four types of curves that can be obtained by taking cross-sections of a cone",
+    },
+    {
+      EXP_NO: 5,
+      EXP: "Ruled surface",
+      YOUTUBE: "https://youtu.be/vzLex5anET0",
+      DESCRIPTION:
+        "A ruled surface in mathematics is a surface that can be generated by moving a straight line along a curve",
+    },
+    {
+      EXP_NO: 6,
+      EXP: "Mathematical figures and formulas",
+      YOUTUBE: "https://youtu.be/hxYIdNc7574",
+      DESCRIPTION:
+        "There are many different shapes in geometry, each with its own set of properties and formulas for calculating them",
+    },
+    {
+      EXP_NO: 7,
+      EXP: "Life of Pi",
+      YOUTUBE: "https://youtu.be/txEJWTjnr7o",
+      DESCRIPTION:
+        "Pi, denoted by the symbol π, is a mathematical constant approximately equal to 3.14159",
+    },
+    {
+      EXP_NO: 8,
+      EXP: "GIGANTIC,INVISIBLE TRIANGLES",
+      YOUTUBE: "https://youtu.be/PkvZ-eIVGsQ",
+      DESCRIPTION: "Uses pythogorous theorem",
+    },
+    {
+      EXP_NO: 9,
+      EXP: "CIRCUMSCRIBING A CIRCLE ABOUT A TRIANGLE USING THE GEOMETRY APPLET",
+      YOUTUBE: "",
+      DESCRIPTION:
+        "CIRCUMSCRIBING A CIRCLE ABOUT A TRIANGLE USING THE GEOMETRY APPLET",
+    },
+    {
+      EXP_NO: 10,
+      EXP: "Throwing you some curves",
+      YOUTUBE: "https://youtu.be/BXGr2cQ4DiA",
+      DESCRIPTION: "The concept of curves and straight lines",
+    },
+    {
+      EXP_NO: 11,
+      EXP: "Arbelos",
+      YOUTUBE: "https://youtu.be/9d6GLhaHJhQ",
+      DESCRIPTION:
+        "An Arbelos is a geometric shape formed by three semi-circles ",
+    },
+    {
+      EXP_NO: 12,
+      EXP: "TILING WITH SPIDRONS",
+      YOUTUBE: "",
+      DESCRIPTION:
+        "Spidrons are geometric shapes that can be used for tiling patterns",
+    },
+    {
+      EXP_NO: 13,
+      EXP: "Surface area and volume",
+      YOUTUBE: "https://youtu.be/3_XBQdvlMIc",
+      DESCRIPTION: "The total exposed area and amount of space",
+    },
+    {
+      EXP_NO: 14,
+      EXP: "Water hose experiment ",
+      YOUTUBE: "https://youtu.be/fwbl-tAK94g",
+      DESCRIPTION:
+        "A water hose experiment is a scientific or educational activity that involves conducting experiments or demonstrating principles using a water hose",
+    },
+    {
+      EXP_NO: 15,
+      EXP: "Juice box Geometry",
+      YOUTUBE: "https://youtu.be/VVOyce-higI",
+      DESCRIPTION:
+        "Geometry is the study of how to use math to describe and investigate different points, lines, and shapes.",
+    },
+    {
+      EXP_NO: 16,
+      EXP: "",
+      YOUTUBE: "",
+      DESCRIPTION: "",
+    },
+    {
+      EXP_NO: 17,
+      EXP: "",
+      YOUTUBE: "",
+      DESCRIPTION: "",
+    },
+    {
+      EXP_NO: 18,
+      EXP: "",
+      YOUTUBE: "",
+      DESCRIPTION: "",
+    },
+    {
+      EXP_NO: 19,
+      EXP: "Frequency of outcomes in a small number of trials",
+      YOUTUBE: "https://youtu.be/4tLkuE8Zodw",
+      DESCRIPTION: "Different possible occurances",
+    },
+    {
+      EXP_NO: 20,
+      EXP: "Fastest way to solve a rubik's cube",
+      YOUTUBE: "https://youtu.be/Vat8SvRj4qA",
+      DESCRIPTION:
+        "The maximum number of moves required to solve a Rubik's Cube is 20",
+    },
+    {
+      EXP_NO: 21,
+      EXP: "LOGARITHMS EXPLAINED WITH TREES",
+      YOUTUBE: "https://youtu.be/CP3dHzM1kvo",
+      DESCRIPTION:
+        "A logarithm is a mathematical function that expresses the power to which a number (the base) must be raised in order to produce a given value",
+    },
+    {
+      EXP_NO: 22,
+      EXP: "",
+      YOUTUBE: "",
+      DESCRIPTION: "",
+    },
+    {
+      EXP_NO: 23,
+      EXP: "Sets and their functions",
+      YOUTUBE: "https://youtu.be/p9dvFJGry-U",
+      DESCRIPTION:
+        "Sets and functions are two fundamental concepts in mathematics, and they are closely related to each other.",
+    },
+    {
+      EXP_NO: 24,
+      EXP: "",
+      YOUTUBE: "",
+      DESCRIPTION: "",
+    },
+    {
+      EXP_NO: 25,
+      EXP: "SHAPES AND VOLUMES",
+      YOUTUBE: "https://youtu.be/fRQQz7ZKdpg",
+      DESCRIPTION:
+        "Shapes and volumes are fundamental concepts in mathematics and geometry",
+    },
+    {
+      EXP_NO: 26,
+      EXP: "Formation of Shapes",
+      YOUTUBE: "https://youtu.be/07A416DqCbE",
+      DESCRIPTION:
+        "he formation of shapes in mathematics typically involves the use of mathematical concepts such as points, lines, and angles",
+    },
+    {
+      EXP_NO: 27,
+      EXP: "Trigonometry in day to day life",
+      YOUTUBE: "https://youtu.be/f8tujrLG4Sw",
+      DESCRIPTION: "Trigonometry - measuring height of a building",
+    },
+    {
+      EXP_NO: 28,
+      EXP: "",
+      YOUTUBE: "",
+      DESCRIPTION: "",
+    },
+    {
+      EXP_NO: 29,
+      EXP: "",
+      YOUTUBE: "",
+      DESCRIPTION: "",
+    },
+    {
+      EXP_NO: 30,
+      EXP: "",
+      YOUTUBE: "",
+      DESCRIPTION: "",
+    },
+    {
+      EXP_NO: 31,
+      EXP: "Representing set-theoretical operations using Venn diagrams",
+      YOUTUBE: "https://youtu.be/MjqueNQBFe4",
+      DESCRIPTION:
+        "Venn diagrams are a useful tool for representing set-theoretical operations, such as unions, intersections, and complements",
+    },
+    {
+      EXP_NO: 32,
+      EXP: "",
+      YOUTUBE: "",
+      DESCRIPTION: "",
+    },
+    {
+      EXP_NO: 33,
+      EXP: "",
+      YOUTUBE: "",
+      DESCRIPTION: "",
+    },
+    {
+      EXP_NO: 34,
+      EXP: "",
+      YOUTUBE: "",
+      DESCRIPTION: "",
+    },
+    {
+      EXP_NO: 35,
+      EXP: "",
+      YOUTUBE: "",
+      DESCRIPTION: "",
+    },
+    {
+      EXP_NO: 36,
+      EXP: "Relationship between degree measures and radian measures of angle",
+      YOUTUBE: "https://youtu.be/fzf8pOYOafg",
+      DESCRIPTION:
+        "An angle is a geometric figure formed by two rays, called the sides of the angle, that share a common endpoint, called the vertex of the angle",
+    },
+    {
+      EXP_NO: 37,
+      EXP: "Understanding the combination of a factorial",
+      YOUTUBE: "https://youtu.be/mwnOUTPQS6I",
+      DESCRIPTION:
+        "The combination of a factorial is a mathematical concept used to determine the number of ways that a certain number of objects can be selected from a larger set of objects without regard to their order",
+    },
+    {
+      EXP_NO: 38,
+      EXP: "",
+      YOUTUBE: "",
+      DESCRIPTION: "",
+    },
+    {
+      EXP_NO: 39,
+      EXP: "",
+      YOUTUBE: "",
+      DESCRIPTION: "",
+    },
+    {
+      EXP_NO: 40,
+      EXP: "",
+      YOUTUBE: "",
+      DESCRIPTION: "",
+    },
+  ],
+  ece: [
+    {
+      EXP_NO: 8,
+      EXP: "Smart Charger Monitoring System using Arduino",
+      YOUTUBE: "https://youtu.be/oTVa8tcIpdo",
+      DESCRIPTION: "Smart charger monitoring system using Arduino",
+    },
+    {
+      EXP_NO: 11,
+      EXP: "IOT Based Automatic Vehicle Accident Detection and Rescue System",
+      YOUTUBE: "https://youtu.be/9jTCQjo79WY",
+      DESCRIPTION:
+        "IOT based accident detection system helps to reduce the loss of life due to accidents",
+    },
+    {
+      EXP_NO: 16,
+      EXP: "Face Recognition Door Lock System Using Raspberry Pi",
+      YOUTUBE: "https://youtu.be/rKfHMWmXMw8",
+      DESCRIPTION:
+        "The face samples that are authorized  are collected to open the lock",
+    },
+    {
+      EXP_NO: 19,
+      EXP: "Automatic Road Reflector Light",
+      YOUTUBE: "https://youtu.be/2WlEK0AVy6Q",
+      DESCRIPTION:
+        "The proposed system is designed to sense the intensity of ambient light and work accordingly",
+    },
+    {
+      EXP_NO: 20,
+      EXP: "Auto Water Pump Switcher",
+      YOUTUBE: "https://youtu.be/djl7lMqHgSE",
+      DESCRIPTION:
+        "Idea that simply turns on or off your pump depending on your water supply",
+    },
+    {
+      EXP_NO: 23,
+      EXP: "Hybrid Inverter with Solar Battery Charging",
+      YOUTUBE: "https://youtu.be/OojmadOO2gY",
+      DESCRIPTION: "Hybrid Inverter with Solar Battery Charging",
+    },
+    {
+      EXP_NO: 26,
+      EXP: "Wireless Mobile Charging Project",
+      YOUTUBE: "https://youtu.be/08GRc2mATCE",
+      DESCRIPTION: "Wireless Mobile Charging Project",
+    },
+    {
+      EXP_NO: 27,
+      EXP: "Solar UPS Project",
+      YOUTUBE: "https://youtu.be/8eDQFTPfEA4",
+      DESCRIPTION:
+        "A solar based ups project that uses solar energy to charge battery and then the DC battery is used to power an AC load using inverter",
+    },
+    {
+      EXP_NO: 30,
+      EXP: "Switching Load by Touch",
+      YOUTUBE: "https://youtu.be/2ql9emaUVAE",
+      DESCRIPTION:
+        "The project's goal is to swap loads utilising a touch-based switch",
+    },
+    {
+      EXP_NO: 36,
+      EXP: "Overvoltage and Undervoltage Protection System",
+      YOUTUBE: "https://youtu.be/069W8Y50bnU",
+      DESCRIPTION:
+        "This project aims at protecting the electrical equipment from over and under voltages using just an Arduino and voltage sensor at a low cost",
+    },
+    {
+      EXP_NO: 44,
+      EXP: "Arduino alcohol sense engine lock",
+      YOUTUBE: "https://youtu.be/qwDjEc61dkA",
+      DESCRIPTION:
+        "The system consists of an Arduino nano board along with a gas sensor for detection",
+    },
+    {
+      EXP_NO: 45,
+      EXP: "Arduino Covid Disinfection Box",
+      YOUTUBE: "https://youtu.be/Ttii_kvg2T0",
+      DESCRIPTION: "Arduino covid disinfection box",
+    },
+  ],
 };
 export function getExp(cat: string) {
   switch (cat) {
@@ -295,29 +956,38 @@ export function getExp(cat: string) {
   }
 }
 export function getExpVideo(cat: string, index: number) {
-  index = index - 1;
   switch (cat) {
     case "mechanical":
+      index = index - 1;
+
       return data.mechanical[index];
 
     case "ece":
-      return data.ece[index];
+      const ece = data.ece.find((item) => item.EXP_NO === index);
+
+      return ece;
 
     case "physics":
-      return data.physics[index];
+      const phy = data.physics.find((item) => item.EXP_NO === index);
+
+      return phy;
 
     case "math":
-      return data.math[index];
+      const math = data.math.find((item) => item.EXP_NO === index);
+
+      return math;
     default:
       return {
         EXP: "null",
         YOUTUBE: "https://youtu.be/kbtowgIVwvc",
         DESCRIPTION: "null",
+        EXP_NO: 0,
       };
   }
 }
 
 export function getRelatedVideos(cat: string) {
+  console.log("cat", cat);
   switch (cat) {
     case "mechanical":
       return getRandomItems(data.mechanical, 5);
@@ -367,6 +1037,8 @@ export function truncateText(text: string, maxLength: number = 44): string {
   }
 }
 export function getYoutubeId(url: string): string {
+  if (!url) return "null";
+  if (!url.includes("https://")) return "null";
   const parts = url.split("/");
   return parts.pop() || "";
 }

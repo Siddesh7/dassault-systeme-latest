@@ -13,11 +13,10 @@ import Link from "next/link";
 import {useEffect, useState} from "react";
 
 const VideoPage = ({params}: {params: {id: string; slug: string}}) => {
-  const video = getExpVideo(params.id, Number(params.slug));
   const [comments, setComments] = useState<any[]>([]);
   const [relatedVideos, setRelatedVideos] = useState<any[]>([]);
   const [commentInput, setCommentInput] = useState("");
-
+  const [video, setVideo] = useState<any>({});
   const {data: session} = useSession();
 
   useEffect(() => {
@@ -39,7 +38,11 @@ const VideoPage = ({params}: {params: {id: string; slug: string}}) => {
   }, [params]);
   useEffect(() => {
     const relatedVideos = getRelatedVideos(params.id);
+    console.log(relatedVideos);
     setRelatedVideos(relatedVideos);
+    const video = getExpVideo(params.id, Number(params.slug));
+
+    setVideo(video);
   }, [params]);
   const postComment = async () => {
     if (!commentInput || commentInput.length < 1) return;
@@ -134,11 +137,21 @@ const VideoPage = ({params}: {params: {id: string; slug: string}}) => {
               {/* Loop through your recommended videos */}
               {relatedVideos.map((video, index) => (
                 <div key={index}>
-                  <Link href={`/categories/mechanical/${video.index}`}>
+                  <Link
+                    href={`/categories/${params.id}/${
+                      params.id !== "mechanical"
+                        ? video.item.EXP_NO
+                        : video.index
+                    }`}
+                  >
                     <div className="flex gap-4 mb-4 p-2 hover:bg-white/10 rounded-lg cursor-pointer">
                       <div className="w-32 h-32 flex-none bg-gray-200 rounded-xl overflow-hidden">
                         <img
-                          src={`/mechanical/${video.index}.png`}
+                          src={`/${params.id}/${
+                            params.id !== "mechanical"
+                              ? video.item.EXP_NO
+                              : video.index
+                          }.png`}
                           alt="Video Thumbnail"
                           className="object-cover w-full h-full"
                         />

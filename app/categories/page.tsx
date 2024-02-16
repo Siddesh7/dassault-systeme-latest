@@ -34,7 +34,7 @@ const page = () => {
             </div>
             <div className="card w-full min-h-[300px] md:w-[40%] bg-base-100 shadow-xl image-full">
               <figure>
-                <img src="/physics/05.png" alt="Shoes" />
+                <img src="/physics/5.png" alt="Shoes" />
               </figure>
               <div className="card-body">
                 <h2 className="card-title text-4xl">Physics Videos</h2>
