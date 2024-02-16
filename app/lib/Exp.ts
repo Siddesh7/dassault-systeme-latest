@@ -335,7 +335,7 @@ export function getRelatedVideos(cat: string) {
   }
 }
 
-function getRandomItems(items, count) {
+function getRandomItems(items: any[], count: number) {
   // Clone the items array to avoid mutating the original array
   let tempItems = [...items];
 

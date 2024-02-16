@@ -36,11 +36,11 @@ const VideoPage = ({params}: {params: {id: string; slug: string}}) => {
       setComments(data.comments);
     };
     fetchComments();
-  }, []);
+  }, [params]);
   useEffect(() => {
     const relatedVideos = getRelatedVideos(params.id);
     setRelatedVideos(relatedVideos);
-  }, []);
+  }, [params]);
   const postComment = async () => {
     if (!commentInput || commentInput.length < 1) return;
     const res = await fetch(`/api/comment`, {
