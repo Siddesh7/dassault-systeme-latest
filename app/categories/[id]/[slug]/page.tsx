@@ -85,7 +85,8 @@ const VideoPage = ({params}: {params: {id: string; slug: string}}) => {
                     video.YOUTUBE
                   )}`}
                   title="YouTube video player"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
                 ></iframe>
               </div>
               <div className="mt-4">
