@@ -19,7 +19,7 @@ const VideoPage = ({params}: {params: {id: string; slug: string}}) => {
   const [commentInput, setCommentInput] = useState("");
 
   const {data: session} = useSession();
-  console.log(session);
+
   useEffect(() => {
     const fetchComments = async () => {
       const res = await fetch(
@@ -96,7 +96,10 @@ const VideoPage = ({params}: {params: {id: string; slug: string}}) => {
                 <div className="w-10 rounded-full">
                   <img
                     alt="user"
-                    src={session?.user?.image}
+                    src={
+                      session?.user?.image ||
+                      "https://t3.ftcdn.net/jpg/05/16/27/58/360_F_516275801_f3Fsp17x6HQK0xQgDQEELoTuERO4SsWV.jpg"
+                    }
                     className="rounded-full w-10"
                   />
                 </div>
