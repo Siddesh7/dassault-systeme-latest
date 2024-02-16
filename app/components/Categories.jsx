@@ -37,7 +37,7 @@ const Categories = () => {
             <Carousel
               responsive={responsive}
               infinite={true}
-              className="owl-carousel owl-theme skill-slider owl-loaded owl-drag px-[60px] md:px-[120px] z-[2]"
+              className="owl-carousel owl-theme skill-slider owl-loaded owl-drag px-[70px] md:px-[120px] z-[2]"
             >
               <Link
                 href="/categories/mechanical"
