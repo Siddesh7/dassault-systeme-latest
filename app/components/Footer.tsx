@@ -48,7 +48,7 @@ const Footer = () => {
             </a>
           </div>
         </nav>
-        <div>
+        <div className="mt-[20px] lg:mt-0">
           <Image src="/logo.png" alt="logo" width={200} height={200} />
         </div>
       </div>

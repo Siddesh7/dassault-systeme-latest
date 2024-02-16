@@ -42,6 +42,7 @@ const VideoPage = ({params}: {params: {id: string; slug: string}}) => {
     setRelatedVideos(relatedVideos);
   }, []);
   const postComment = async () => {
+    if (!commentInput || commentInput.length < 1) return;
     const res = await fetch(`/api/comment`, {
       method: "POST",
       headers: {
@@ -64,7 +65,6 @@ const VideoPage = ({params}: {params: {id: string; slug: string}}) => {
   };
   return (
     <main className="bg-[#151515]">
-      (
       <div className="px-2 md:px-6 py-2 md:py-6 min-h-screen bg-cover bg-[url('/color-sharp.png')] bg-right-bottom">
         <div className="w-[96vw] mx-auto">
           <Navbar />
@@ -160,7 +160,6 @@ const VideoPage = ({params}: {params: {id: string; slug: string}}) => {
           </div>
         )}
       </div>
-      )
     </main>
   );
 };

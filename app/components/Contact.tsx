@@ -1,6 +1,7 @@
 "use client";
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import Image from "next/image";
+import {useSession} from "next-auth/react";
 interface formData {
   firstName: string;
   lastName?: string;
@@ -9,16 +10,43 @@ interface formData {
   message: string;
 }
 const Contact = () => {
+  const {data: session} = useSession();
   const [formData, setFormData] = useState<formData>({
     firstName: "",
     lastName: "",
-    email: "",
+    email: session?.user?.email || "",
     organization: "",
     message: "",
   });
+  const [loading, setLoading] = useState(false);
   const sendForm = () => {
-    console.log(formData);
+    setLoading(true);
+
+    fetch("/api/form", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    }).then((res) => {
+      if (res.status === 200) {
+        setLoading(false);
+        setFormData({
+          firstName: "",
+          lastName: "",
+          email: "",
+          organization: "",
+          message: "",
+        });
+      } else {
+        alert("Error submitting form");
+      }
+    });
   };
+
+  useEffect(() => {
+    setFormData({...formData, email: session?.user?.email || ""});
+  }, [session]);
   return (
     <div
       className="py-[60px] "
@@ -28,12 +56,12 @@ const Contact = () => {
       }}
     >
       <div className="flex flex-col w-[80%] m-auto py-[60px] md:flex-row gap-12">
-        <div className="w-[40vw] absolute opacity-40 top-40 left-[60%] md:top-0 md:left-0 md:opacity-100  md:relative animate-up-down">
+        <div className="w-[40vw] absolute opacity-40 top-50 left-[60%] md:top-0 md:left-0 md:opacity-100  md:relative animate-up-down">
           <Image src="/contact-img.svg" alt="" width={500} height={500} />
         </div>
-        <div className="w-[50%]">
+        <div className="w-full lg::w-[50%]">
           <h3 className="text-5xl font-bold">Get in touch!</h3>
-          <div className="flex flex-col w-full text-white gap-2 my-6">
+          <div className="flex flex-col w-full text-black gap-2 my-6">
             <div className="flex flex-row gap-4">
               <input
                 type="text"
@@ -84,8 +112,16 @@ const Contact = () => {
               }
               required
             ></textarea>
-            <button className="btn btn-primary" onClick={sendForm}>
-              Send
+            <button
+              className="btn btn-primary"
+              onClick={sendForm}
+              disabled={loading}
+            >
+              {loading ? (
+                <span className="loading loading-ring loading-lg"></span>
+              ) : (
+                `Send`
+              )}
             </button>
           </div>
         </div>

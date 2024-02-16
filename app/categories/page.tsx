@@ -12,9 +12,9 @@ const page = () => {
         </div>
 
         <div className="w-[90vw] m-auto my-[40px flex flex-col py-[40px] gap-4">
-          <div className="flex flex-row justify-evenly gap-4">
+          <div className="flex flex-col md:flex-row md:justify-evenly gap-4">
             {" "}
-            <div className="card w-[40%] bg-base-100 shadow-xl image-full">
+            <div className="card w-full min-h-[300px] md:w-[40%] bg-base-100 shadow-xl image-full">
               <figure>
                 <img src="/mechanical/1.png" alt="Shoes" />
               </figure>
@@ -32,7 +32,7 @@ const page = () => {
                 </div>
               </div>
             </div>
-            <div className="card w-[40%] bg-base-100 shadow-xl image-full">
+            <div className="card w-full min-h-[300px] md:w-[40%] bg-base-100 shadow-xl image-full">
               <figure>
                 <img src="/physics/05.png" alt="Shoes" />
               </figure>
@@ -51,9 +51,9 @@ const page = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-row justify-evenly gap-4">
+          <div className="flex flex-col md:flex-row md:justify-evenly gap-4">
             {" "}
-            <div className="card w-[40%] bg-base-100 shadow-xl image-full">
+            <div className="card w-full min-h-[300px] md:w-[40%] bg-base-100 shadow-xl image-full">
               <figure>
                 <img src="/ece/44.png" alt="Shoes" />
               </figure>
@@ -70,7 +70,7 @@ const page = () => {
                 </div>
               </div>
             </div>
-            <div className="card w-[40%] bg-base-100 shadow-xl image-full">
+            <div className="card w-full min-h-[300px] md:w-[40%] bg-base-100 shadow-xl image-full">
               <figure>
                 <img src="/math/29.png" alt="Shoes" />
               </figure>
