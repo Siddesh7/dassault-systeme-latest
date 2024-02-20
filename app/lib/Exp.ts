@@ -987,7 +987,6 @@ export function getExpVideo(cat: string, index: number) {
 }
 
 export function getRelatedVideos(cat: string) {
-  console.log("cat", cat);
   switch (cat) {
     case "mechanical":
       return getRandomItems(data.mechanical, 5);

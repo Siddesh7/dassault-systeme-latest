@@ -22,22 +22,25 @@ const Contact = () => {
   const sendForm = () => {
     setLoading(true);
 
-    fetch("/api/form", {
+    fetch("/api/sheets", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(formData),
+      body: JSON.stringify({
+        values: [
+          formData.firstName,
+          formData.lastName,
+          formData.email,
+          formData.organization,
+          formData.message,
+        ],
+        sheetName: "form-responses",
+      }),
     }).then((res) => {
       if (res.status === 200) {
         setLoading(false);
-        setFormData({
-          firstName: "",
-          lastName: "",
-          email: "",
-          organization: "",
-          message: "",
-        });
+        setFormData((prev) => ({...prev, message: ""}));
       } else {
         alert("Error submitting form");
       }

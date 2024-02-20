@@ -18,7 +18,7 @@ const VideoPage = ({params}: {params: {id: string; slug: string}}) => {
   const [commentInput, setCommentInput] = useState("");
   const [video, setVideo] = useState<any>({});
   const {data: session} = useSession();
-
+  const [userAuthorisation, setUserAuthorisation] = useState(false);
   useEffect(() => {
     const fetchComments = async () => {
       const res = await fetch(
@@ -38,12 +38,33 @@ const VideoPage = ({params}: {params: {id: string; slug: string}}) => {
   }, [params]);
   useEffect(() => {
     const relatedVideos = getRelatedVideos(params.id);
-    console.log(relatedVideos);
     setRelatedVideos(relatedVideos);
     const video = getExpVideo(params.id, Number(params.slug));
 
     setVideo(video);
   }, [params]);
+
+  useEffect(() => {
+    if (!session) return;
+    const fetchAuthorisedUsers = async () => {
+      const res = await fetch(`/api/sheets?sheetName=Access Control!A2:A`, {
+        method: "GET",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+      });
+      const data = await res.json();
+      if (data.data) {
+        const isUserAuthorised = data.data.some((row: any[]) =>
+          row.includes(session?.user?.email)
+        );
+
+        setUserAuthorisation(isUserAuthorised);
+      }
+    };
+    fetchAuthorisedUsers();
+  }, [session]);
   const postComment = async () => {
     if (!commentInput || commentInput.length < 1) return;
     const res = await fetch(`/api/comment`, {
@@ -74,102 +95,111 @@ const VideoPage = ({params}: {params: {id: string; slug: string}}) => {
         </div>
 
         {session?.user ? (
-          <div className="flex flex-col md:flex-row  gap-4 w-[90vw] m-auto my-14">
-            {/* Main Video Section */}
-            <div className="flex-1">
-              <div className="aspect-video rounded-xl">
-                {/* Replace this div with your video player component */}
-                <iframe
-                  className="w-full h-full rounded-xl"
-                  src={`https://www.youtube.com/embed/${getYoutubeId(
-                    video.YOUTUBE
-                  )}`}
-                  title="YouTube video player"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-              </div>
-              <div className="mt-4">
-                <h3 className="mb-4 text-2xl font-semibold text-white">
-                  {video.EXP}
-                </h3>
-                <p className="mt-2 text-gray-500">{video.DESCRIPTION}</p>
-              </div>
+          <div>
+            {userAuthorisation ? (
+              <div className="flex flex-col md:flex-row  gap-4 w-[90vw] m-auto my-14">
+                {/* Main Video Section */}
+                <div className="flex-1">
+                  <div className="aspect-video rounded-xl">
+                    {/* Replace this div with your video player component */}
+                    <iframe
+                      className="w-full h-full rounded-xl"
+                      src={`https://www.youtube.com/embed/${getYoutubeId(
+                        video.YOUTUBE
+                      )}`}
+                      title="YouTube video player"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    ></iframe>
+                  </div>
+                  <div className="mt-4">
+                    <h3 className="mb-4 text-2xl font-semibold text-white">
+                      {video.EXP}
+                    </h3>
+                    <p className="mt-2 text-gray-500">{video.DESCRIPTION}</p>
+                  </div>
 
-              <div className="flex flex-row items-center gap-4 mt-8">
-                <div className="w-10 rounded-full">
-                  <img
-                    alt="user"
-                    src={
-                      session?.user?.image ||
-                      "https://t3.ftcdn.net/jpg/05/16/27/58/360_F_516275801_f3Fsp17x6HQK0xQgDQEELoTuERO4SsWV.jpg"
-                    }
-                    className="rounded-full w-10"
-                  />
-                </div>
-                <div className="flex flex-row w-full gap-2">
-                  {" "}
-                  <input
-                    type="text"
-                    placeholder="Type your comments here..."
-                    className="input input-bordered w-[74%]"
-                    onChange={(e) => setCommentInput(e.target.value)}
-                    value={commentInput}
-                    onKeyPress={(e) => {
-                      if (e.key === "Enter") {
-                        postComment();
-                      }
-                    }}
-                  />
-                  <button className="btn btn-primary" onClick={postComment}>
-                    Post Comment
-                  </button>
-                </div>
-              </div>
-
-              <CommentsSection comments={comments} />
-            </div>
-
-            {/* Recommended Videos Sidebar */}
-            <div className="w-full md:w-80 flex-shrink-0">
-              <h3 className="mb-4 text-2xl font-semibold text-white">
-                Recommended
-              </h3>
-              {/* Loop through your recommended videos */}
-              {relatedVideos.map((video, index) => (
-                <div key={index}>
-                  <Link
-                    href={`/categories/${params.id}/${
-                      params.id !== "mechanical"
-                        ? video.item.EXP_NO
-                        : video.index
-                    }`}
-                  >
-                    <div className="flex gap-4 mb-4 p-2 hover:bg-white/10 rounded-lg cursor-pointer">
-                      <div className="w-32 h-32 flex-none bg-gray-200 rounded-xl overflow-hidden">
-                        <img
-                          src={`/${params.id}/${
-                            params.id !== "mechanical"
-                              ? video.item.EXP_NO
-                              : video.index
-                          }.png`}
-                          alt="Video Thumbnail"
-                          className="object-cover w-full h-full"
-                        />
-                      </div>
-                      <div>
-                        <h4 className="text-md font-semibold text-white">
-                          {truncateText(video.item.EXP, 44)}
-                        </h4>
-                        <p className="pt-2 md:hidden">
-                          {video.item.DESCRIPTION}
-                        </p>
-                      </div>
+                  <div className="flex flex-row items-center gap-4 mt-8">
+                    <div className="w-10 rounded-full">
+                      <img
+                        alt="user"
+                        src={
+                          session?.user?.image ||
+                          "https://t3.ftcdn.net/jpg/05/16/27/58/360_F_516275801_f3Fsp17x6HQK0xQgDQEELoTuERO4SsWV.jpg"
+                        }
+                        className="rounded-full w-10"
+                      />
                     </div>
-                  </Link>
+                    <div className="flex flex-row w-full gap-2">
+                      {" "}
+                      <input
+                        type="text"
+                        placeholder="Type your comments here..."
+                        className="input input-bordered w-[74%]"
+                        onChange={(e) => setCommentInput(e.target.value)}
+                        value={commentInput}
+                        onKeyPress={(e) => {
+                          if (e.key === "Enter") {
+                            postComment();
+                          }
+                        }}
+                      />
+                      <button className="btn btn-primary" onClick={postComment}>
+                        Post Comment
+                      </button>
+                    </div>
+                  </div>
+
+                  <CommentsSection comments={comments} />
                 </div>
-              ))}
-            </div>
+
+                {/* Recommended Videos Sidebar */}
+                <div className="w-full md:w-80 flex-shrink-0">
+                  <h3 className="mb-4 text-2xl font-semibold text-white">
+                    Recommended
+                  </h3>
+                  {/* Loop through your recommended videos */}
+                  {relatedVideos.map((video, index) => (
+                    <div key={index}>
+                      <Link
+                        href={`/categories/${params.id}/${
+                          params.id !== "mechanical"
+                            ? video.item.EXP_NO
+                            : video.index
+                        }`}
+                      >
+                        <div className="flex gap-4 mb-4 p-2 hover:bg-white/10 rounded-lg cursor-pointer">
+                          <div className="w-32 h-32 flex-none bg-gray-200 rounded-xl overflow-hidden">
+                            <img
+                              src={`/${params.id}/${
+                                params.id !== "mechanical"
+                                  ? video.item.EXP_NO
+                                  : video.index
+                              }.png`}
+                              alt="Video Thumbnail"
+                              className="object-cover w-full h-full"
+                            />
+                          </div>
+                          <div>
+                            <h4 className="text-md font-semibold text-white">
+                              {truncateText(video.item.EXP, 44)}
+                            </h4>
+                            <p className="pt-2 md:hidden">
+                              {video.item.DESCRIPTION}
+                            </p>
+                          </div>
+                        </div>
+                      </Link>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ) : (
+              <div className="flex justify-center items-center min-h-[80vh] text-2xl">
+                You are not authorised to view this content, Please contact the
+                team
+              </div>
+            )}
           </div>
         ) : (
           <div className="flex justify-center items-center min-h-[80vh] text-2xl">

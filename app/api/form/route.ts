@@ -4,7 +4,7 @@ import {NextRequest, NextResponse} from "next/server";
 export async function POST(req: any): Promise<Response> {
   const body = await req.json();
   const {firstName, lastName, email, organization, message} = body;
-  console.log(body);
+
   const messageBody = `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,7 +23,6 @@ export async function POST(req: any): Promise<Response> {
 </html>
 `;
 
-  console.log(messageBody);
   try {
     const transporter = nodemailer.createTransport({
       service: "Gmail",
