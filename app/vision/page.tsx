@@ -20,7 +20,7 @@ const About = () => {
 
       <div>
         <h1 className="text-3xl md:text-5xl font-extrabold bg-gradient-to-r from-purple-400 via-orange-500 to-pink-400 text-transparent bg-clip-text bg-300% animate-gradient mt-12 mb-6">
-          About
+          About SKCT
         </h1>
         <p className="text-md md:text-xl">
           Nestled at the foothills of the Western Ghats, located in a sprawling
