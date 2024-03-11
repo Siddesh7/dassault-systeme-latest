@@ -33,7 +33,7 @@ const data = {
     {
       EXP: "Cold chamber die casting machine",
       YOUTUBE: "https://youtu.be/VPN8RKr70pM",
-      DESCRIPTION: "null",
+      DESCRIPTION: "",
     },
     {
       EXP: "CNC pneumatic auto feed punching machine",
@@ -220,7 +220,7 @@ const data = {
     },
     {
       EXP: "Multipurpose tool changer-mechanical project",
-      YOUTUBE: "null",
+      YOUTUBE: "",
       DESCRIPTION:
         "Multipurpose tooling machine is a machine which can perform operations like drilling, shaping, grinding, buffing, cutting at different working stations simultaneously",
     },
@@ -698,21 +698,24 @@ const data = {
     },
     {
       EXP_NO: 16,
-      EXP: "",
-      YOUTUBE: "",
-      DESCRIPTION: "",
+      EXP: "Play-doh math",
+      YOUTUBE: "https://youtu.be/ilwD7kVLbRM",
+      DESCRIPTION:
+        "Play-Doh was invented in the 1950s as a modeling compound for use in art and craft projects",
     },
     {
       EXP_NO: 17,
-      EXP: "",
-      YOUTUBE: "",
-      DESCRIPTION: "",
+      EXP: "Shape changing with cyber-squad",
+      YOUTUBE: "https://youtu.be/-CrjH7erjFQ",
+      DESCRIPTION:
+        "Cybersquad's shape-changing powers can be a fun and engaging way for children to explore and learn about geometry and spatial reasoning",
     },
     {
       EXP_NO: 18,
-      EXP: "",
-      YOUTUBE: "",
-      DESCRIPTION: "",
+      EXP: "Estimation and Population Size",
+      YOUTUBE: "https://youtu.be/sILHpgoChR4",
+      DESCRIPTION:
+        "Estimation is the process of using available information to make informed guesses about the value of a quantity",
     },
     {
       EXP_NO: 19,
@@ -736,9 +739,10 @@ const data = {
     },
     {
       EXP_NO: 22,
-      EXP: "",
-      YOUTUBE: "",
-      DESCRIPTION: "",
+      EXP: "CALCULAS EXPLAINED WITH MOVING BODIES",
+      YOUTUBE: "https://youtu.be/8BFQ-jVd8ew",
+      DESCRIPTION:
+        "Calculus is a branch of mathematics that deals with the study of rates of change and accumulation of quantities.",
     },
     {
       EXP_NO: 23,
@@ -749,9 +753,10 @@ const data = {
     },
     {
       EXP_NO: 24,
-      EXP: "",
-      YOUTUBE: "",
-      DESCRIPTION: "",
+      EXP: "Series by progression",
+      YOUTUBE: "https://youtu.be/dWC7ZRmohCw",
+      DESCRIPTION:
+        "A series by progression is a sequence of numbers, where each number is determined by a specific rule or progression",
     },
     {
       EXP_NO: 25,
@@ -775,21 +780,24 @@ const data = {
     },
     {
       EXP_NO: 28,
-      EXP: "",
-      YOUTUBE: "",
-      DESCRIPTION: "",
+      EXP: "DIFFERENT SHAPES BUT ALL HAVE THE SAME VOLUME",
+      YOUTUBE: "https://youtu.be/dNuI8dP1GkU",
+      DESCRIPTION:
+        "Different shapes can have the same volume if they have the same dimensions",
     },
     {
       EXP_NO: 29,
-      EXP: "",
-      YOUTUBE: "",
-      DESCRIPTION: "",
+      EXP: "STATISTICS IN REAL LIFE",
+      YOUTUBE: "https://youtu.be/sj5PqkLNzqo",
+      DESCRIPTION:
+        "Statistics is a method of conducting a study about a particular topic by collecting, organizing, interpreting and finally presenting the data.",
     },
     {
       EXP_NO: 30,
-      EXP: "",
-      YOUTUBE: "",
-      DESCRIPTION: "",
+      EXP: "VISUALIZING ALGEBRA",
+      YOUTUBE: "https://youtu.be/rRomgMrve3M",
+      DESCRIPTION:
+        "Algebra is a branch of mathematics that deals with mathematical symbols and the rules for manipulating those symbols to solve equations",
     },
     {
       EXP_NO: 31,
@@ -800,27 +808,30 @@ const data = {
     },
     {
       EXP_NO: 32,
-      EXP: "",
-      YOUTUBE: "",
-      DESCRIPTION: "",
+      EXP: "Distributive properties of set operations",
+      YOUTUBE: "https://youtu.be/XySUBLNIb0M",
+      DESCRIPTION:
+        "The distributive properties of set operations refer to the way that certain set operations can be distributed over other set operations",
     },
     {
       EXP_NO: 33,
-      EXP: "",
-      YOUTUBE: "",
-      DESCRIPTION: "",
+      EXP: "HOW TO CALCULATE THE NUMBER OF SUBSETS IN A GIVEN SETS",
+      YOUTUBE: "https://youtu.be/Qiv9YlRZPxQ",
+      DESCRIPTION: "A set is a collection of distinct objects or elements. ",
     },
     {
       EXP_NO: 34,
-      EXP: "",
-      YOUTUBE: "",
-      DESCRIPTION: "",
+      EXP: "TO IDENTIFY A RELATION AND FUNCTION",
+      YOUTUBE: "https://youtu.be/mHr-UWXI5KA",
+      DESCRIPTION:
+        "Relations and functions are fundamental concepts in mathematics and are used to model various real-world scenarios.",
     },
     {
       EXP_NO: 35,
-      EXP: "",
-      YOUTUBE: "",
-      DESCRIPTION: "",
+      EXP: "RELATIONSHIP BETWEEN COMMON LOGARITHMS AND NATURAL LOGARITHMS",
+      YOUTUBE: "https://youtu.be/uKfoNVs-e4U",
+      DESCRIPTION:
+        "Common logarithms and natural logarithms are both types of logarithms, which are mathematical functions",
     },
     {
       EXP_NO: 36,
@@ -838,21 +849,24 @@ const data = {
     },
     {
       EXP_NO: 38,
-      EXP: "",
-      YOUTUBE: "",
-      DESCRIPTION: "",
+      EXP: "How many words can be formed with or without repetition",
+      YOUTUBE: "https://youtu.be/Gknfde18EWk",
+      DESCRIPTION:
+        "The number of words that can be formed with and without repetition is related to the number of possible arrangements of letters from a given set.",
     },
     {
       EXP_NO: 39,
-      EXP: "",
-      YOUTUBE: "",
-      DESCRIPTION: "",
+      EXP: "Distinguish between different functions through an activity",
+      YOUTUBE: "https://youtu.be/4AzbBaWzwic",
+      DESCRIPTION:
+        "Activity that can help distinguish between different functions in math",
     },
     {
       EXP_NO: 40,
-      EXP: "",
-      YOUTUBE: "",
-      DESCRIPTION: "",
+      EXP: "Determining trigonometric functions",
+      YOUTUBE: "https://youtu.be/SLhj0-1RLzo",
+      DESCRIPTION:
+        "Trigonometric functions describe the relationship between the sides and angles of a right triangle. There are six trigonometric functions",
     },
   ],
   ece: [
@@ -863,11 +877,24 @@ const data = {
       DESCRIPTION: "Smart charger monitoring system using Arduino",
     },
     {
+      EXP_NO: 10,
+      EXP: "IOT based smart agriculture monitoring system project",
+      YOUTUBE: "https://youtu.be/piJF2qp3gxY",
+      DESCRIPTION: "IOT plays a very important role in smart agriculture.",
+    },
+    {
       EXP_NO: 11,
       EXP: "IOT Based Automatic Vehicle Accident Detection and Rescue System",
       YOUTUBE: "https://youtu.be/9jTCQjo79WY",
       DESCRIPTION:
         "IOT based accident detection system helps to reduce the loss of life due to accidents",
+    },
+    {
+      EXP_NO: 13,
+      EXP: "IOT Based Heart Monitoring System Using ECG",
+      YOUTUBE: "https://youtu.be/Wp49Efn2jUg",
+      DESCRIPTION:
+        "This heart monitoring system also helps to inform the person whether he/she has any heart diseases or not.",
     },
     {
       EXP_NO: 16,

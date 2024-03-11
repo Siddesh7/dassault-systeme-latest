@@ -7,7 +7,7 @@ import {signIn, useSession, signOut} from "next-auth/react";
 const Navbar = () => {
   const {data: session} = useSession();
   return (
-    <div className="navbar bg-opacity-20 backdrop-blur-xl bg-white/30 rounded-2xl  z-100">
+    <div className="navbar bg-opacity-20 backdrop-blur-xl bg-white/10 rounded-2xl  px-4 py-2 mt-2">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
@@ -35,6 +35,19 @@ const Navbar = () => {
             </li>
             <li>
               <Link href={"/categories"}>Categories</Link>
+            </li>
+            <li>
+              <Link href={"/vision"}>Vision</Link>
+            </li>
+            <li>
+              <Link href={"/about"}>About</Link>
+            </li>
+
+            <li>
+              <Link href={"/team"}>Team</Link>
+            </li>
+            <li>
+              <Link href={"/gallery"}>Gallery</Link>
             </li>
           </ul>
         </div>
