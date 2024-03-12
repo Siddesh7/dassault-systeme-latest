@@ -68,8 +68,12 @@ const Categories = () => {
                 href="/categories/ece"
                 className="w-[180px] h-[200px] flex flex-col justify-center items-center"
               >
-                <img src={"/match.png"} alt="Image" className="w-[100%]" />
-                <h5>Maths</h5>
+                <img
+                  src={"/eee.jpeg"}
+                  alt="Image"
+                  className="w-[100%] rounded-full"
+                />
+                <h5>EEE/ECE</h5>
               </Link>
             </Carousel>
           </div>

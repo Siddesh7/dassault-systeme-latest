@@ -29,11 +29,11 @@ const TeamData = {
   ],
   cse: [
     {
-      name: "Nishanth Sri Raja",
+      name: "Nishanthsriraja A",
       image: "nishanth.jpeg",
     },
     {
-      name: "Sivaprakash C",
+      name: "Sivaprakasam C",
       image: "siva.jpeg",
     },
     {
@@ -50,7 +50,17 @@ const TeamData = {
     },
     {
       name: "Sugheeshan S",
-      image: "sugheeshan.jpeg",
+      image: "sugheeshan.jpg",
+    },
+  ],
+  eee: [
+    {
+      name: "HemanandhaKumar D",
+      image: "hemanandha.jpeg",
+    },
+    {
+      name: "Indu S",
+      image: "indu.jpeg",
     },
   ],
 };
@@ -185,6 +195,26 @@ const Team = () => {
         </p>
         <div className="flex flex-col md:grid md:grid-cols-4 gap-6  my-8">
           {TeamData.cse.map((team, index) => (
+            <div key={index} className="card bg-base-200 shadow-xl">
+              <img
+                src={`${process.env.NEXT_PUBLIC_HOST}/team/${team.image}`}
+                alt={team.name}
+                className="rounded-full max-w-40 max-h-40 min-h-40 min-w-40 object-cover mx-auto mt-4"
+              />
+
+              <div className="card-body items-center text-center">
+                <h2 className="card-title">{team.name}</h2>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div>
+        <p className="text-xl md:text-2xl font-bold mt-10">
+          Department of Electrical and Electronics Engineering
+        </p>
+        <div className="flex flex-col md:grid md:grid-cols-4 gap-6  my-8">
+          {TeamData.eee.map((team, index) => (
             <div key={index} className="card bg-base-200 shadow-xl">
               <img
                 src={`${process.env.NEXT_PUBLIC_HOST}/team/${team.image}`}

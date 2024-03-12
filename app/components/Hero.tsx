@@ -7,7 +7,7 @@ const Hero = () => {
     <div className="px-2 md:px-6 py-4 md:pt-6 min-h-screen bg-cover bg-[url('/banner-bg.png')]">
       <Navbar />
 
-      <div className="flex flex-col md:flex-row justify-evenly md:items-center mt-[30px]">
+      <div className="flex flex-col md:flex-row-reverse justify-evenly md:items-center mt-[30px]">
         <div className="w-[40vw] absolute opacity-40 top-40 left-[60%] md:top-0 md:left-0 md:opacity-100  md:relative animate-up-down">
           <Image src="/aa.png" alt="" width={500} height={500} />
         </div>

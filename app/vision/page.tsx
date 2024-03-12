@@ -109,6 +109,31 @@ const About = () => {
           recruited by globally reputed companies.
         </p>
       </div>
+      <div className="mb-12">
+        <h1 className="text-3xl md:text-5xl font-extrabold bg-gradient-to-r from-purple-400 via-orange-500 to-pink-400 text-transparent bg-clip-text bg-300% animate-gradient mt-12 mb-6">
+          La Fondation Dassault Systèmes
+        </h1>
+        <p className="text-md md:text-xl">
+          La Fondation Dassault Systèmes® was set up by Dassault Systèmes, the
+          3DEXPERIENCE Company and world leader in 3D design software. La
+          Fondation Dassault Systèmes&apos; mission is to strive for a
+          sustainable future by supporting the development of an economy based
+          on collective intelligence that is accessible to the greatest possible
+          number of teachers, students and searchers. La Fondation Dassault
+          systémes has been continuously supporting young engineers in the
+          country since 2018. La Fondation Dassault Systèmes provides grants,
+          training, and expertise about 3D virtual universe technologies to help
+          schools, universities, research centers, museums, and associations in
+          Europe, the U.S., and India to push the limits of knowledge. Its
+          mission is to inspire young people with a passion for engineering,
+          science, and digital technology to create a better and more
+          collaborative society. As part of this mission, it actively
+          contributes to inventing new ways of sharing know-how and transforming
+          learning practices that make it possible to detect new talents and
+          help them achieve their dreams. For more information:
+          www.lafondation.3ds.com
+        </p>
+      </div>
     </div>
   );
 };
