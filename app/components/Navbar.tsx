@@ -52,7 +52,7 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
-      <div className="navbar-center bg-opacity-50 bg-white/20 px-4  py-3 rounded-xl">
+      <div className="navbar-center bg-opacity-50 bg-white px-4  py-3 rounded-xl">
         <Link href="/">
           <img src="/logo.png" alt="logo" className="w-[120px] md:w-[200px]" />
         </Link>
